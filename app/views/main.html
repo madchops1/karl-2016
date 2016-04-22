@@ -1,0 +1,64 @@
+<div class="hero-feature container-fluid">
+  <div class="image container-fluid" ng-style="{'background-image':'url({{wallpaper.url}})'}">
+    <!--
+    <a href="/" class="logoname">Karl J. Steltenpohl</a>
+    <div class="clearfix"></div>
+    The Internet | Longboarding | Art
+    -->
+  </div>
+</div>
+<div class="container">
+
+  <!-- JUMBOTRON -->
+  <div class="jumbotron">
+    <h1>Whatup.</h1>
+    <p class="lead">
+      <img src="images/me_png.png" alt="I'm Yeoman" style="width:120px;"><br>
+      The Internet &nbsp; | &nbsp; Longboarding &nbsp; | &nbsp; Art
+    </p>
+
+    <div class="col-xs-4 col-sm-3 karlthing" ng-repeat="thing in karlsThings">
+      <a>
+        <span class="glyphicon" ng-class="thing.icon" aria-hidden="true"></span><br>{{thing.name}}
+      </a>
+    </div>
+    <!--
+    <div class="col-xs-3">Labs</div>
+    <div class="col-xs-3">Resume</div>
+    <div class="col-xs-3">Longboarding</div>
+    <div class="col-xs-3">Robot &amp; Puppy</div>
+    <div class="col-xs-3">Blog</div>
+    <div class="col-xs-3">Wallpapers</div>
+    <div class="col-xs-3">Video</div>
+    <div class="col-xs-3">Music</div>
+    -->
+
+    <div class="clearfix"></div>
+
+    <!-- <p><a class="btn btn-lg btn-success" ng-href="#/">Do Something! <span class="glyphicon glyphicon-sunglasses"></span></a></p> -->
+
+  </div>
+
+  <!-- LATEST BLOG or ROBOT AND PUPPY or WALLPAPER or FACE -->
+  <div class="row marketing blog">
+    <h4>{{latestBlog.title}}</h4>
+    <div ng-bind-html="latestBlog.body"></div>
+  </div>
+
+  <!--
+  <div class="row marketing">
+    <h4>HTML5 Boilerplate</h4>
+    <p>
+      HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+    </p>
+
+    <h4>Angular</h4>
+    <p>
+      AngularJS is a toolset for building the framework most suited to your application development.
+    </p>
+
+    <h4>Karma</h4>
+    <p>Spectacular Test Runner for JavaScript.</p>
+  </div>
+  -->
+</div>
